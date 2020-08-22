@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Use /Applications/VirtualBox.app/Contents/MacOS/VBoxManage list vms to discover the name of the VM
+VM_NAME="OSC10e-July2018"
+
+case "$1" in
+    start)
+        /Applications/VirtualBox.app/Contents/MacOS/VBoxManage startvm "${VM_NAME}" --type headless
+        ;;
+    stop)
+        /Applications/VirtualBox.app/Contents/MacOS/VBoxManage controlvm "${VM_NAME}" acpipowerbutton
+        ;;
+    connect)
+        ssh -p 2222 osc@127.0.0.1
+        ;;
+    *)
+        >&2 echo "Unknown command: $1" 
+        >&2 echo "Usage: $0 [start|stop|connect]"
+        exit 1
+        ;;
+esac
