@@ -1,3 +1,21 @@
+# One-time setup
+
+- Downloaded [the VM](http://cs.westminstercollege.edu/~greg/osc10e/vm/index.html) and loaded into Virtualbox
+- Installed the Virtualbox guest additions
+- Forked [the book's repo](https://github.com/greggagne/osc10e) here
+- Cloned the repo onto my machine
+- Added a shared folder in Virtualbox for this repo:
+    - Folder name: `operating-system-concepts`
+    - Read/write
+    - Permanent
+    - NOT automount
+- Set the shared folder to automount in the VM by editing `/etc/rc.local` and adding the line `mount -t vboxsf -o rw,uid=1000,gid=1000 operating-system-concepts /home/osc/operating-system-concepts`
+
+At that point, I should be able to edit things on the host and see those changes reflected in the VM
+
+
+# Original README
+
 This contains source code for the 10th edition of
 "Operating System Concepts" by Silberschatz/Galvin/Gagne.
 Published by John Wiley & Sons 2018
