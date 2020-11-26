@@ -1,6 +1,15 @@
-# One-time setup
+# Using the Linux VM
+
+- `bin/vm start` to start the VM in the backgroun
+- `bin/vm connect` to connect
+- Login with username/password `osc`/`osc`
+- `bin/vm stop` to shut the VM down
+
+
+# One-time VM setup
 
 - Downloaded [the VM](http://cs.westminstercollege.edu/~greg/osc10e/vm/index.html) and loaded into Virtualbox
+- Disable audio in the VM (to avoid [this 100% CPU bug](https://www.virtualbox.org/ticket/18089))
 - Installed the Virtualbox guest additions
 - Forked [the book's repo](https://github.com/greggagne/osc10e) here
 - Cloned the repo onto my machine
