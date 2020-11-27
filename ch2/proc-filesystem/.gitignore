@@ -1,0 +1,7 @@
+.tmp_versions/
+Module.symvers
+hello.ko
+hello.mod.c
+hello.mod.o
+hello.o
+modules.order
