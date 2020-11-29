@@ -1,7 +1,7 @@
 .tmp_versions/
 Module.symvers
-hello.ko
-hello.mod.c
-hello.mod.o
-hello.o
+jiffies.ko
+jiffies.mod.c
+jiffies.mod.o
+jiffies.o
 modules.order
